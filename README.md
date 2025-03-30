@@ -4,7 +4,7 @@ Este é o meu portfólio pessoal, desenvolvido com Astro e hospedado no GitHub P
 
 ## 🚀 Como acessar
 
-Visite meu portfólio em: [https://gilopavani.github.io/landing-page/](https://gilopavani.github.io/landing-page/)
+Visite meu portfólio em: [https://gilopavani.github.io/homepage/](https://gilopavani.github.io/homepage/)
 
 ## 💻 Tecnologias utilizadas
 
@@ -23,12 +23,12 @@ Visite meu portfólio em: [https://gilopavani.github.io/landing-page/](https://g
 
 1. Clone o repositório
    ```bash
-   git clone https://github.com/gilopavani/landing-page.git
+   git clone https://github.com/gilopavani/homepage.git
    ```
 
 2. Entre no diretório do projeto
    ```bash
-   cd landing-page
+   cd homepage
    ```
 
 3. Instale as dependências
