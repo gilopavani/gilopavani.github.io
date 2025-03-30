@@ -1,6 +1,13 @@
 ---
 // Import background image for parallax
 import bgImage from '../assets/background.svg';
+import pattern1 from '/images/bg-pattern-1.svg';
+import pattern2 from '/images/bg-pattern-2.svg';
+import pattern3 from '/images/bg-pattern-3.svg';
+import pattern4 from '/images/bg-pattern-4.svg';
+
+// Obter o prefixo de caminho do import.meta.env.BASE_URL
+const basePath = import.meta.env.BASE_URL;
 ---
 
 <nav class="navbar">
@@ -261,7 +268,12 @@ import bgImage from '../assets/background.svg';
   </div>
 </footer>
 
-<style>
+<style define:vars={{ 
+  pattern1: `url(${pattern1})`,
+  pattern2: `url(${pattern2})`,
+  pattern3: `url(${pattern3})`,
+  pattern4: `url(${pattern4})`
+}}>
   /* Navbar */
   .navbar {
     position: fixed;
@@ -474,19 +486,19 @@ import bgImage from '../assets/background.svg';
   }
 
   .about {
-    background-image: linear-gradient(to right, rgba(50, 69, 255, 0.8), rgba(188, 82, 238, 0.8)), url('/images/bg-pattern-1.svg');
+    background-image: linear-gradient(to right, rgba(50, 69, 255, 0.8), rgba(188, 82, 238, 0.8)), var(--pattern1);
   }
 
   .experience {
-    background-image: linear-gradient(to right, rgba(25, 34, 127, 0.8), rgba(94, 41, 119, 0.8)), url('/images/bg-pattern-2.svg');
+    background-image: linear-gradient(to right, rgba(25, 34, 127, 0.8), rgba(94, 41, 119, 0.8)), var(--pattern2);
   }
 
   .education {
-    background-image: linear-gradient(to right, rgba(50, 69, 255, 0.8), rgba(188, 82, 238, 0.8)), url('/images/bg-pattern-3.svg');
+    background-image: linear-gradient(to right, rgba(50, 69, 255, 0.8), rgba(188, 82, 238, 0.8)), var(--pattern3);
   }
 
   .skills {
-    background-image: linear-gradient(to right, rgba(25, 34, 127, 0.8), rgba(94, 41, 119, 0.8)), url('/images/bg-pattern-4.svg');
+    background-image: linear-gradient(to right, rgba(25, 34, 127, 0.8), rgba(94, 41, 119, 0.8)), var(--pattern4);
   }
 
   .parallax-content {

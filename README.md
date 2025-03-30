@@ -1,4 +1,65 @@
-# Astro Starter Kit: Basics
+# Portfólio - Angelo Pavani Neto
+
+Este é o meu portfólio pessoal, desenvolvido com Astro e hospedado no GitHub Pages.
+
+## 🚀 Como acessar
+
+Visite meu portfólio em: [https://gilopavani.github.io/landing-page/](https://gilopavani.github.io/landing-page/)
+
+## 💻 Tecnologias utilizadas
+
+- [Astro](https://astro.build/) - Framework web moderno
+- HTML, CSS, JavaScript
+- GitHub Pages para hospedagem
+
+## 🛠️ Configuração local
+
+### Pré-requisitos
+
+- Node.js (versão 18 ou superior)
+- npm
+
+### Instalação
+
+1. Clone o repositório
+   ```bash
+   git clone https://github.com/gilopavani/landing-page.git
+   ```
+
+2. Entre no diretório do projeto
+   ```bash
+   cd landing-page
+   ```
+
+3. Instale as dependências
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento
+   ```bash
+   npm run dev
+   ```
+
+### Build
+
+Para gerar uma versão de produção:
+
+```bash
+npm run build
+```
+
+## 📋 Estrutura do projeto
+
+- `src/`: Código fonte do projeto
+  - `components/`: Componentes Astro
+  - `layouts/`: Layouts Astro
+  - `pages/`: Páginas do site
+  - `assets/`: Imagens e outros recursos
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
 
 ```sh
 npm create astro@latest -- --template basics
