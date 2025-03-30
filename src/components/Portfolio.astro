@@ -1,10 +1,46 @@
 ---
 // Import background image for parallax
 import bgImage from '../assets/background.svg';
-import pattern1 from '/images/bg-pattern-1.svg';
-import pattern2 from '/images/bg-pattern-2.svg';
-import pattern3 from '/images/bg-pattern-3.svg';
-import pattern4 from '/images/bg-pattern-4.svg';
+
+// Definindo os padrões de fundo como strings inline
+const pattern1 = `<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none"/>
+      <rect width="20" height="20" fill="rgba(255, 255, 255, 0.05)"/>
+      <rect x="20" y="20" width="20" height="20" fill="rgba(255, 255, 255, 0.05)"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+</svg>`;
+
+const pattern2 = `<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="2" fill="rgba(255, 255, 255, 0.07)"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#dots)"/>
+</svg>`;
+
+const pattern3 = `<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="diagonal" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none"/>
+      <path d="M0,40 L40,0" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#diagonal)"/>
+</svg>`;
+
+const pattern4 = `<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="waves" width="40" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0,10 Q10,0 20,10 Q30,20 40,10" stroke="rgba(255, 255, 255, 0.04)" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#waves)"/>
+</svg>`;
 
 // Obter o prefixo de caminho do import.meta.env.BASE_URL
 const basePath = import.meta.env.BASE_URL;
