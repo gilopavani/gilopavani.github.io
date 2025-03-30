@@ -1,0 +1,63 @@
+:root {
+  /* Cores principais - paleta profissional e consistente */
+  --primary-color: #2563eb; /* Azul principal mais vibrante */
+  --primary-light: #3b82f6; /* Azul claro */
+  --primary-dark: #1d4ed8; /* Azul escuro */
+  --accent-color: #7c3aed; /* Roxo - cor de destaque */
+  --accent-light: #8b5cf6; /* Roxo claro */
+  --accent-secondary: #0ea5e9; /* Azul ciano - complementar */
+
+  /* Cores de fundo */
+  --bg-color: #f8fafc; /* Fundo claro quase branco */
+  --section-bg: #ffffff; /* Fundo de seção */
+
+  /* Cores de texto */
+  --text-color: #1e293b; /* Texto sobre fundo claro - cinza escuro */
+  --text-on-dark: #f1f5f9; /* Texto sobre fundo escuro - quase branco */
+  --text-on-light: #334155; /* Texto escuro para contraste com fundo claro */
+  --text-muted: #64748b; /* Texto secundário/mudo - cinza azulado */
+
+  /* Cards e elementos UI */
+  --card-bg: rgba(255, 255, 255, 0.85); /* Fundo de card com transparência */
+  --card-hover-bg: rgba(255, 255, 255, 0.95); /* Fundo de card hover */
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+  --card-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.05); /* Sombra ao passar mouse */
+  --card-border: var(--primary-color); /* Cor da borda dos cards padronizada */
+
+  /* Gradientes */
+  --btn-gradient: linear-gradient(45deg, #2563eb, #7c3aed);
+  --btn-hover-gradient: linear-gradient(45deg, #1d4ed8, #6d28d9);
+  --primary-gradient: linear-gradient(120deg, #1d4ed8, #3b82f6);
+
+  /* Gradientes de seção - padronizados com a mesma base */
+  --section-gradient-1: linear-gradient(
+    to right,
+    rgba(37, 99, 235, 0.9),
+    rgba(59, 130, 246, 0.9)
+  );
+  --section-gradient-2: linear-gradient(
+    to right,
+    rgba(124, 58, 237, 0.9),
+    rgba(139, 92, 246, 0.9)
+  );
+  --section-gradient-3: linear-gradient(
+    to right,
+    rgba(14, 165, 233, 0.8),
+    rgba(56, 189, 248, 0.8)
+  );
+  --section-gradient-4: linear-gradient(
+    to right,
+    rgba(29, 78, 216, 0.9),
+    rgba(59, 130, 246, 0.9)
+  );
+
+  /* Cores para elementos específicos */
+  --navbar-bg: rgba(255, 255, 255, 0.95);
+  --navbar-text: #1e40af;
+  --navbar-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --hero-bg: #eff6ff;
+  --footer-bg: #1e3a8a;
+}
