@@ -4,7 +4,7 @@ Este é o meu portfólio pessoal, desenvolvido com Astro e hospedado no GitHub P
 
 ## 🚀 Como acessar
 
-Visite meu portfólio em: [https://gilopavani.github.io/homepage/](https://gilopavani.github.io/homepage/)
+Visite meu portfólio em : [https://gilopavani.github.io/homepage/](https://gilopavani.github.io/homepage/)
 
 ## 💻 Tecnologias utilizadas
 
