@@ -331,6 +331,73 @@
   background: rgba(255, 255, 255, 0.7);
 }
 
+/* Seção Projetos Pessoais */
+.projects {
+  background-color: var(--bg-color);
+}
+
+.projects::before {
+  /* Você pode escolher um gradiente existente ou criar um novo */
+  background: var(--section-gradient-1); /* Reutilizando um gradiente */
+  backdrop-filter: blur(5px);
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Layout responsivo */
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--card-border);
+  backdrop-filter: blur(10px);
+  color: var(--text-on-light); /* Ajuste se necessário */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alinha o botão no final */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--primary-dark); /* Ajuste a cor se necessário */
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.project-card .tech-stack {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem; /* Espaço antes do botão */
+  font-weight: 500;
+}
+
+.project-card .btn {
+  margin-top: auto; /* Empurra o botão para o final */
+  align-self: flex-start; /* Alinha o botão à esquerda */
+}
+
+/* Responsividade para a seção de projetos */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr; /* Uma coluna em telas menores */
+  }
+}
+
 /* Responsividade */
 @media (max-width: 992px) {
   .skills-container {

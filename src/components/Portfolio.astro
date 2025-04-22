@@ -1,6 +1,6 @@
 ---
 // Import background image for parallax
-import bgImage from '../assets/background.svg';
+import bgImage from "../assets/background.svg";
 
 // Definindo os padrões de fundo como strings inline
 const pattern1 = `<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -54,6 +54,8 @@ const basePath = import.meta.env.BASE_URL;
       <a href="#experiencia" class="nav-link">Experiência</a>
       <a href="#formacao" class="nav-link">Formação</a>
       <a href="#tecnologias" class="nav-link">Tecnologias</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      {/* Adicionado link Projetos */}
       <a href="#contato" class="nav-link">Contato</a>
     </div>
     <button class="mobile-menu-btn">
@@ -69,21 +71,34 @@ const basePath = import.meta.env.BASE_URL;
   <a href="#experiencia" class="mobile-link">Experiência</a>
   <a href="#formacao" class="mobile-link">Formação</a>
   <a href="#tecnologias" class="mobile-link">Tecnologias</a>
+  <a href="#projetos" class="mobile-link">Projetos</a>
+  {/* Adicionado link Projetos */}
   <a href="#contato" class="mobile-link">Contato</a>
 </div>
 
 <section class="hero parallax">
-  <div class="parallax-bg" style={`background-image: url(${bgImage.src});`}></div>
+  <div class="parallax-bg" style={`background-image: url(${bgImage.src});`}>
+  </div>
   <div class="hero-content">
     <div class="hero-text">
       <h1 data-depth="0.2">Angelo Pavani Neto</h1>
-      <h2 data-depth="0.5">Desenvolvedor Full Stack | Especialista em React, Node.js e AWS</h2>
+      <h2 data-depth="0.5">
+        Desenvolvedor Full Stack | Especialista em React, Node.js e AWS
+      </h2>
     </div>
     <div class="social-links" data-depth="0.3">
-      <a href="https://github.com/gilopavani" target="_blank" class="social-link">
+      <a
+        href="https://github.com/gilopavani"
+        target="_blank"
+        class="social-link"
+      >
         <i class="fab fa-github"></i> GitHub
       </a>
-      <a href="https://linkedin.com/in/angelo-pavani-neto" target="_blank" class="social-link">
+      <a
+        href="https://linkedin.com/in/angelo-pavani-neto"
+        target="_blank"
+        class="social-link"
+      >
         <i class="fab fa-linkedin"></i> LinkedIn
       </a>
     </div>
@@ -102,10 +117,12 @@ const basePath = import.meta.env.BASE_URL;
       <div class="about-content">
         <div class="about-text">
           <p>
-            Sou um desenvolvedor que atua de forma ágil e comprometida, sempre alinhando os objetivos pessoais aos
-            da empresa – visto a camisa e contribuindo ativamente para o sucesso coletivo. Com um perfil
-            bem-humorado e focado em resultados. Estou constantemente em busca de aprendizados e novos desafios,
-            sempre disposto a evoluir e a agregar valor aos projetos em que atuo.
+            Sou um desenvolvedor que atua de forma ágil e comprometida, sempre
+            alinhando os objetivos pessoais aos da empresa – visto a camisa e
+            contribuindo ativamente para o sucesso coletivo. Com um perfil
+            bem-humorado e focado em resultados. Estou constantemente em busca
+            de aprendizados e novos desafios, sempre disposto a evoluir e a
+            agregar valor aos projetos em que atuo.
           </p>
         </div>
         <div class="about-info">
@@ -131,7 +148,7 @@ const basePath = import.meta.env.BASE_URL;
   <div class="parallax-content">
     <div class="container">
       <h2 class="section-title">Experiência Profissional</h2>
-      
+
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-badge">
@@ -139,73 +156,117 @@ const basePath = import.meta.env.BASE_URL;
           </div>
           <div class="timeline-content card">
             <h3>Projectiva – Desenvolvedor Front-End</h3>
-            <p class="timeline-date">Julho de 2022 - Presente (2 anos e 8 meses)</p>
+            <p class="timeline-date">
+              Julho de 2022 - Presente (2 anos e 8 meses)
+            </p>
             <p>
-              Projectiva é uma consultoria de software que possui uma grande e variada carteira de clientes, atuei em diversos projetos:
+              Projectiva é uma consultoria de software que possui uma grande e
+              variada carteira de clientes, atuei em diversos projetos:
             </p>
             <div class="project-list">
               <div class="project-item">
                 <h4>Solubio</h4>
-                <p>Voltada para o Agronegócio, a Solubio oferece infraestrutura para produção de bioinsumos na própria fazenda
-                  de seus clientes, minha atuação foi em seu software de gestão, com diversos dashboards provendo atualizações
-                  em tempo real do andamento da produção onfarm.</p>
-                <p class="tech-stack">Tecnologias: Angular, TypeScript, AWS, Apex Charts, LeaFlet, NodeJS e etc.</p>
+                <p>
+                  Voltada para o Agronegócio, a Solubio oferece infraestrutura
+                  para produção de bioinsumos na própria fazenda de seus
+                  clientes, minha atuação foi em seu software de gestão, com
+                  diversos dashboards provendo atualizações em tempo real do
+                  andamento da produção onfarm.
+                </p>
+                <p class="tech-stack">
+                  Tecnologias: Angular, TypeScript, AWS, Apex Charts, LeaFlet,
+                  NodeJS e etc.
+                </p>
               </div>
-              
+
               <div class="project-item">
                 <h4>GoSolos</h4>
-                <p>Também voltada para o mundo do Agro, GoSolos oferece serviços de mapeamento genético de solo, seu
-                  software apresenta bio insights a partir de dados provenientes de amostras físicas tratados por um dispositivo
-                  de sequenciamento genético.</p>
-                <p class="tech-stack">Tecnologias: Angular, TypeScript, AWS, Apex Charts, NodeJS e etc.</p>
+                <p>
+                  Também voltada para o mundo do Agro, GoSolos oferece serviços
+                  de mapeamento genético de solo, seu software apresenta bio
+                  insights a partir de dados provenientes de amostras físicas
+                  tratados por um dispositivo de sequenciamento genético.
+                </p>
+                <p class="tech-stack">
+                  Tecnologias: Angular, TypeScript, AWS, Apex Charts, NodeJS e
+                  etc.
+                </p>
               </div>
-              
+
               <div class="project-item">
                 <h4>Tokenix</h4>
-                <p>Desenvolvimento e manutenção do Tokenix, uma plataforma para criação de múltiplas carteiras de
-                  criptomoedas, permitindo a compra de um token atrelado ao dólar, transações entre usuários (incluindo
-                  pagamentos internacionais) e conversão para moeda local.</p>
-                <p class="tech-stack">Tecnologias: NextJS, ReactJS, TypeScript, React Query e etc.</p>
+                <p>
+                  Desenvolvimento e manutenção do Tokenix, uma plataforma para
+                  criação de múltiplas carteiras de criptomoedas, permitindo a
+                  compra de um token atrelado ao dólar, transações entre
+                  usuários (incluindo pagamentos internacionais) e conversão
+                  para moeda local.
+                </p>
+                <p class="tech-stack">
+                  Tecnologias: NextJS, ReactJS, TypeScript, React Query e etc.
+                </p>
               </div>
-              
+
               <div class="project-item">
                 <h4>ERP Projectiva</h4>
-                <p>Desenvolvimento e manutenção de um ERP interno, projetado para ser comercializado no modelo white
-                  label, permitindo personalização para diferentes clientes.</p>
-                <p class="tech-stack">Tecnologias: Angular, TypeScript, NestJS e etc.</p>
+                <p>
+                  Desenvolvimento e manutenção de um ERP interno, projetado para
+                  ser comercializado no modelo white label, permitindo
+                  personalização para diferentes clientes.
+                </p>
+                <p class="tech-stack">
+                  Tecnologias: Angular, TypeScript, NestJS e etc.
+                </p>
               </div>
-              
+
               <div class="project-item">
                 <h4>Imobshot</h4>
-                <p>Desenvolvimento desde a sua fundação de um aplicativo iOS e Android e um painel administrativo web em
-                  ReactJS, com seu público alvo sendo imobiliárias, o Imobshot é um produto que oferece diversas
-                  funcionalidades para facilitar a administração de imóveis e suas fotos, tendo a possibilidade de compartilhar
-                  os dados dos imóveis entre todos os integrantes da imobiliária.</p>
-                <p class="tech-stack">Tecnologias: React Native, ReactJS, TypeScript, React Query, Android Studio, Python, Express e etc.</p>
+                <p>
+                  Desenvolvimento desde a sua fundação de um aplicativo iOS e
+                  Android e um painel administrativo web em ReactJS, com seu
+                  público alvo sendo imobiliárias, o Imobshot é um produto que
+                  oferece diversas funcionalidades para facilitar a
+                  administração de imóveis e suas fotos, tendo a possibilidade
+                  de compartilhar os dados dos imóveis entre todos os
+                  integrantes da imobiliária.
+                </p>
+                <p class="tech-stack">
+                  Tecnologias: React Native, ReactJS, TypeScript, React Query,
+                  Android Studio, Python, Express e etc.
+                </p>
               </div>
-              
+
               <div class="project-item">
                 <h4>Rota Sonora</h4>
-                <p>Desenvolvimento desde a sua fundação de um aplicativo iOS e Android utilizando React Native, focado em
-                  gerenciar rotas de carro de som, o aplicativo registra dados em tempo real do caminho percorrido pelos
-                  motoristas dos carros de som.</p>
-                <p class="tech-stack">Tecnologias: React Native, TypeScript, React Query, Android Studio, Express e etc.</p>
+                <p>
+                  Desenvolvimento desde a sua fundação de um aplicativo iOS e
+                  Android utilizando React Native, focado em gerenciar rotas de
+                  carro de som, o aplicativo registra dados em tempo real do
+                  caminho percorrido pelos motoristas dos carros de som.
+                </p>
+                <p class="tech-stack">
+                  Tecnologias: React Native, TypeScript, React Query, Android
+                  Studio, Express e etc.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-badge">
             <span>2020 - 2023</span>
           </div>
           <div class="timeline-content card">
             <h3>Refil Informática Ltda – Técnico em Manutenção</h3>
-            <p class="timeline-date">Agosto de 2020 - Janeiro de 2023 (2 anos e 6 meses)</p>
+            <p class="timeline-date">
+              Agosto de 2020 - Janeiro de 2023 (2 anos e 6 meses)
+            </p>
             <p>
-              Na Refil Informática, fui responsável pela manutenção, suporte e otimização de
-              equipamentos de informática, contribuindo para a eficiência operacional e a resolução
-              de problemas técnicos, garantindo a continuidade dos processos e a satisfação dos
+              Na Refil Informática, fui responsável pela manutenção, suporte e
+              otimização de equipamentos de informática, contribuindo para a
+              eficiência operacional e a resolução de problemas técnicos,
+              garantindo a continuidade dos processos e a satisfação dos
               usuários.
             </p>
           </div>
@@ -219,7 +280,7 @@ const basePath = import.meta.env.BASE_URL;
   <div class="parallax-content">
     <div class="container">
       <h2 class="section-title">Formação & Certificados</h2>
-      
+
       <div class="education-content">
         <div class="education-item">
           <h3>Formação Acadêmica</h3>
@@ -229,7 +290,7 @@ const basePath = import.meta.env.BASE_URL;
             <p>Curso Superior de Tecnologia (CST) em Desenvolvimento Mobile</p>
           </div>
         </div>
-        
+
         <div class="education-item">
           <h3>Certificados</h3>
           <ul class="certificate-list">
@@ -247,7 +308,7 @@ const basePath = import.meta.env.BASE_URL;
   <div class="parallax-content">
     <div class="container">
       <h2 class="section-title">Tecnologias & Competências</h2>
-      
+
       <div class="skills-container">
         <div class="skill-category">
           <h3>Linguagens & Frameworks</h3>
@@ -278,7 +339,7 @@ const basePath = import.meta.env.BASE_URL;
             </div>
           </div>
         </div>
-        
+
         <div class="skill-category">
           <h3>Infraestrutura & Cloud</h3>
           <div class="skill-items">
@@ -300,7 +361,7 @@ const basePath = import.meta.env.BASE_URL;
             </div>
           </div>
         </div>
-        
+
         <div class="skill-category">
           <h3>Metodologias & Soft Skills</h3>
           <div class="skill-items">
@@ -335,21 +396,70 @@ const basePath = import.meta.env.BASE_URL;
   </div>
 </section>
 
+{/* Nova Seção Projetos Pessoais */}
+<section id="projetos" class="section projects parallax-section">
+  <div class="parallax-content">
+    <div class="container">
+      <h2 class="section-title">Projetos Pessoais</h2>
+      <div class="projects-container">
+        {/* Projeto ProjeChat */}
+        <div class="project-card card">
+          <h3>ProjeChat - Atendimento Automatizado WhatsApp</h3>
+          <p>
+            Plataforma de atendimento automático via WhatsApp para empresas,
+            centralizando conversas, permitindo respostas automáticas,
+            gerenciamento de múltiplos atendentes e relatórios em tempo real.
+            Simples, funciona 24h e possui plano gratuito.
+          </p>
+          <p class="tech-stack">
+            Tecnologias: React, Node.js, Express, TypeScript, Prisma, MongoDB
+          </p>
+          <a href="https://www.angelopavani.com.br/" target="_blank" class="btn"
+            >Visitar ProjeChat</a
+          >
+        </div>
+
+        {/* Projeto Refil Assist */}
+        <div class="project-card card">
+          <h3>Refil Assist - Sistema de Assistência Técnica</h3>
+          <p>
+            Plataforma web para gerenciamento de serviços de assistência técnica
+            de informática. Otimiza o fluxo de trabalho com controle completo de
+            chamados, status, prazos, priorização inteligente e acompanhamento
+            pelo cliente.
+          </p>
+          <p class="tech-stack">
+            Tecnologias: Next.js, React, Firebase (Banco de Dados e
+            Autenticação)
+          </p>
+          <a
+            href="https://refil.angelopavani.com.br/"
+            target="_blank"
+            class="btn">Visitar Refil Assist</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="contato" class="section contact">
   <div class="contact-container">
     <div class="contact-content">
       <h2 class="contact-title">Entre em Contato</h2>
       <p class="contact-subtitle">Vamos conversar sobre seu próximo projeto</p>
-      
+
       <div class="contact-info">
         <div class="contact-item">
           <i class="fas fa-envelope"></i>
           <div class="contact-item-content">
             <h3>Email</h3>
-            <p><a href="mailto:angelopav.98@gmail.com">angelopav.98@gmail.com</a></p>
+            <p>
+              <a href="mailto:angelopav.98@gmail.com">angelopav.98@gmail.com</a>
+            </p>
           </div>
         </div>
-        
+
         <div class="contact-item">
           <i class="fas fa-phone-alt"></i>
           <div class="contact-item-content">
@@ -357,7 +467,7 @@ const basePath = import.meta.env.BASE_URL;
             <p><a href="tel:+5538999443416">(38) 99944-3416</a></p>
           </div>
         </div>
-        
+
         <div class="contact-item">
           <i class="fas fa-map-marker-alt"></i>
           <div class="contact-item-content">
@@ -366,12 +476,20 @@ const basePath = import.meta.env.BASE_URL;
           </div>
         </div>
       </div>
-      
+
       <div class="social-links-container">
-        <a href="https://github.com/gilopavani" target="_blank" class="social-btn">
+        <a
+          href="https://github.com/gilopavani"
+          target="_blank"
+          class="social-btn"
+        >
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://linkedin.com/in/angelo-pavani-neto" target="_blank" class="social-btn">
+        <a
+          href="https://linkedin.com/in/angelo-pavani-neto"
+          target="_blank"
+          class="social-btn"
+        >
           <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
@@ -387,12 +505,14 @@ const basePath = import.meta.env.BASE_URL;
   </div>
 </footer>
 
-<style define:vars={{ 
-  pattern1: `url(${pattern1})`,
-  pattern2: `url(${pattern2})`,
-  pattern3: `url(${pattern3})`,
-  pattern4: `url(${pattern4})`
-}}>
+<style
+  define:vars={{
+    pattern1: `url(${pattern1})`,
+    pattern2: `url(${pattern2})`,
+    pattern3: `url(${pattern3})`,
+    pattern4: `url(${pattern4})`,
+  }}
+>
   /* Só mantemos variáveis específicas deste componente (padrões de SVG) */
   :root {
     --pattern1: var(--pattern1);
@@ -404,47 +524,55 @@ const basePath = import.meta.env.BASE_URL;
 
 <script>
   // Mobile menu toggle
-  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-  const mobileMenu = document.querySelector('.mobile-menu');
-  
-  mobileMenuBtn?.addEventListener('click', () => {
-    mobileMenuBtn.classList.toggle('active');
-    mobileMenu?.classList.toggle('active');
+  const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  mobileMenuBtn?.addEventListener("click", () => {
+    mobileMenuBtn.classList.toggle("active");
+    mobileMenu?.classList.toggle("active");
   });
-  
+
   // Close mobile menu when clicking on a link
-  const mobileLinks = document.querySelectorAll('.mobile-link');
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenuBtn?.classList.remove('active');
-      mobileMenu?.classList.remove('active');
+  const mobileLinks = document.querySelectorAll(".mobile-link");
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenuBtn?.classList.remove("active");
+      mobileMenu?.classList.remove("active");
     });
   });
-  
+
   // Simple parallax effect on scroll
-  window.addEventListener('scroll', () => {
-    const parallaxElements = document.querySelectorAll('[data-depth]');
+  window.addEventListener("scroll", () => {
+    const parallaxElements = document.querySelectorAll("[data-depth]");
     const scrollTop = window.pageYOffset;
-    
-    parallaxElements.forEach(element => {
-      const depth = element.getAttribute('data-depth') || "0";
+
+    parallaxElements.forEach((element) => {
+      const depth = element.getAttribute("data-depth") || "0";
       const movement = -(scrollTop * parseFloat(depth));
       if (element instanceof HTMLElement) {
         element.style.transform = `translateY(${movement}px)`;
       }
     });
   });
-  
+
   // Add scroll animation to reveal elements
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('fade-in');
-      }
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  document
+    .querySelectorAll(
+      ".timeline-item, .education-item, .skill-category, .project-card, .contact-item, .social-links-container"
+    )
+    .forEach((item) => {
+      // Adicionado .project-card ao observer
+      observer.observe(item);
     });
-  }, { threshold: 0.1 });
-  
-  document.querySelectorAll('.timeline-item, .education-item, .skill-category, .contact-item, .social-links-container').forEach(item => {
-    observer.observe(item);
-  });
 </script>
